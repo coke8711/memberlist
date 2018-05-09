@@ -22,7 +22,7 @@ public class MemberController {
 	public String memberList(Model model) {
 		//controller =>service =>dao 요청
 		List<MemberVO> list = memberService.memberList();
-		model.addAttribute("list",ilst);
+		model.addAttribute("list",list);
 		return "member/member_list";
 	}
 }
